@@ -2,7 +2,7 @@ class LotteryController < ApplicationController
   def lucky
     @array_of_numbers = []
     5.times do
-      another_number = rand(1...100)
+      another_number = rand(1..100)
       
       @array_of_numbers.push(another_number)
     end
@@ -12,7 +12,7 @@ class LotteryController < ApplicationController
   def unlucky
     @array_of_numbers = []
     5.times do
-      another_number = rand(1...100)
+      another_number = rand(1..100)
       
       @array_of_numbers.push(another_number)
     end
